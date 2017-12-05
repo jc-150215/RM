@@ -4,10 +4,49 @@
              xmlns:local="clr-namespace:RM"
              x:Class="RM.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical">
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="重さ(kg)" />
+                <Entry x:Name="Weight"
+                       Text=""/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="回数"/>
+                <Picker
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="300">
+                    <Picker.Items>
+                        <x:String>１回</x:String>
+                        <x:String>２回</x:String>
+                        <x:String>３回</x:String>
+                        <x:String>４回</x:String>
+                        <x:String>５回</x:String>
+                        <x:String>６回</x:String>
+                        <x:String>７回</x:String>
+                        <x:String>８回</x:String>
+                        <x:String>９回</x:String>
+                        <x:String>１０回</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            
+            <Button Text="計算"
+                    Clicked="Button_Clicked"/>
+            
+            <Label Text="推定RM"
+                   BackgroundColor="Silver"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="1RM"/>
+                <Label Text="重量"/>
+                <Entry x:Name="RM"
+                        Text=""/>
+            </StackLayout>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
