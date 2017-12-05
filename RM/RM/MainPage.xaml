@@ -4,20 +4,26 @@
              xmlns:local="clr-namespace:RM"
              x:Class="RM.MainPage">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-            
+        <StackLayout Orientation="Vertical"
+                     Spacing="40">
+
+            <Label Text=""/>
+
             <StackLayout Orientation="Horizontal">
-                <Label Text="重さ(kg)" />
+                <Label Text="重さ(kg)" 
+                       FontSize="100"/>
                 <Entry x:Name="Weight"
-                       Text=""/>
+                       Text=""
+                       WidthRequest="100"/>
             </StackLayout>
             
             <StackLayout Orientation="Horizontal">
-                <Label Text="回数"/>
+                <Label Text="回数"
+                       FontSize="100"/>
                 <Picker
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
-                    WidthRequest="300">
+                    WidthRequest="250">
                     <Picker.Items>
                         <x:String>１回</x:String>
                         <x:String>２回</x:String>
@@ -34,16 +40,21 @@
             </StackLayout>
             
             <Button Text="計算"
+                    FontSize="100"
                     Clicked="Button_Clicked"/>
             
-            <Label Text="推定RM"
+            <Label Text="                                                                 推定RM"
+                   FontSize="100"
                    BackgroundColor="Silver"/>
             
             <StackLayout Orientation="Horizontal">
-                <Label Text="1RM"/>
-                <Label Text="重量"/>
+                <Label Text="1RM"
+                       FontSize="100"/>
+                <Label Text="重量"
+                       FontSize="100"/>
                 <Entry x:Name="RM"
-                        Text=""/>
+                       Text=""
+                       WidthRequest="100"/>
             </StackLayout>
 
 
