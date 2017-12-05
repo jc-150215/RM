@@ -16,7 +16,7 @@ namespace RM
        private void Button_Clicked(object sender, EventArgs e)
         {
             Double w = Double.Parse(Weight.Text);
-            Double c = Double.Parse(Count.Text);
+            int c = int.Parse(Count.Text);
             Double rm = Double.Parse(RM.Text);
             
             if(c == 1)
