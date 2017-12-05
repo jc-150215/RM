@@ -20,24 +20,24 @@
             <StackLayout Orientation="Horizontal">
                 <Label Text="回数"
                        FontSize="50"/>
-                <Picker
-                    x:Name="Count"
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    WidthRequest="200">
-                    <Picker.Items >
-                        <x:String>１</x:String>
-                        <x:String>２</x:String>
-                        <x:String>３</x:String>
-                        <x:String>４</x:String>
-                        <x:String>５</x:String>
-                        <x:String>６</x:String>
-                        <x:String>７</x:String>
-                        <x:String>８</x:String>
-                        <x:String>９</x:String>
-                        <x:String>１０</x:String>
-                    </Picker.Items>
+
+                <Picker x:Name="Count">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
                 </Picker>
+
             </StackLayout>
             
             <Button Text="計算"
