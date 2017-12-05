@@ -11,52 +11,54 @@
 
             <StackLayout Orientation="Horizontal">
                 <Label Text="重さ(kg)" 
-                       FontSize="100"/>
+                       FontSize="50"/>
                 <Entry x:Name="Weight"
                        Text=""
-                       WidthRequest="100"/>
+                       WidthRequest="50"/>
             </StackLayout>
             
             <StackLayout Orientation="Horizontal">
                 <Label Text="回数"
-                       FontSize="100"/>
+                       FontSize="50"/>
                 <Picker
+                    x:Name="Count"
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
-                    WidthRequest="250">
-                    <Picker.Items>
-                        <x:String>１回</x:String>
-                        <x:String>２回</x:String>
-                        <x:String>３回</x:String>
-                        <x:String>４回</x:String>
-                        <x:String>５回</x:String>
-                        <x:String>６回</x:String>
-                        <x:String>７回</x:String>
-                        <x:String>８回</x:String>
-                        <x:String>９回</x:String>
-                        <x:String>１０回</x:String>
+                    WidthRequest="200">
+                    <Picker.Items >
+                        <x:String>１</x:String>
+                        <x:String>２</x:String>
+                        <x:String>３</x:String>
+                        <x:String>４</x:String>
+                        <x:String>５</x:String>
+                        <x:String>６</x:String>
+                        <x:String>７</x:String>
+                        <x:String>８</x:String>
+                        <x:String>９</x:String>
+                        <x:String>１０</x:String>
                     </Picker.Items>
                 </Picker>
             </StackLayout>
             
             <Button Text="計算"
-                    FontSize="100"
+                    FontSize="50"
                     Clicked="Button_Clicked"/>
             
-            <Label Text="                                                                 推定RM"
-                   FontSize="100"
+            <Label Text="                                                                推定RM"
+                   FontSize="50"
+                   FontAttributes="Bold"
                    BackgroundColor="Silver"/>
             
             <StackLayout Orientation="Horizontal">
                 <Label Text="1RM"
-                       FontSize="100"/>
+                       FontSize="50"/>
                 <Label Text="重量"
-                       FontSize="100"/>
-                <Entry x:Name="RM"
+                       FontSize="50"/>
+                
+                <Label x:Name="RM"
                        Text=""
-                       WidthRequest="100"/>
+                       WidthRequest="50"/>
             </StackLayout>
-
 
         </StackLayout>
     </ContentPage.Content>
