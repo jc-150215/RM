@@ -21,8 +21,8 @@
                 <Label Text="回数"
                        FontSize="50"/>
 
-                <Picker x:Name="Count" Title="文字を選択してください">
-                    <Picker.Items>
+                <Picker Title="文字を選択してください">
+                    <Picker.Items x:Name="Count">
                         <x:String>1</x:String>
                         <x:String>2</x:String>
                         <x:String>3</x:String>

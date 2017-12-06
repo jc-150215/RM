@@ -15,7 +15,7 @@ namespace RM
         }
        private void Button_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("test",Count.SelectedItem,"OK");
+            DisplayAlert("",Count.SelectedItem,"OK");
         }
     }
 }
