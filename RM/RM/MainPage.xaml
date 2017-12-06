@@ -19,7 +19,8 @@
             
             <StackLayout Orientation="Horizontal">
                 <Label Text="回数"
-                       FontSize="50"/>
+                       FontSize="50"
+                       />
                 
                 <Picker x:Name="count" Title="数字を入力してください">
                     <Picker.Items>
@@ -42,10 +43,11 @@
                     FontSize="50"
                     Clicked="Button_Clicked"/>
             
-            <Label Text="                                                                推定RM"
+            <Label Text="推定RM"
                    FontSize="50"
                    FontAttributes="Bold"
-                   BackgroundColor="Silver"/>
+                   BackgroundColor="Silver"
+                   VerticalOptions="Center"/>
             
             <StackLayout Orientation="Horizontal">
                 <Label Text="1RM"
@@ -56,6 +58,7 @@
                 <Label x:Name="RM"
                        Text=""
                        WidthRequest="50"/>
+                
             </StackLayout>
 
         </StackLayout>

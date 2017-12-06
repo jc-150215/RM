@@ -19,11 +19,11 @@ namespace RM
             Double w = Double.Parse(Weight.Text);
             Double rm = Double.Parse(RM.Text);
             String s = (String)count.SelectedItem;
-            DisplayAlert("RM", s, "ok");
+            //DisplayAlert("RM", s, "ok");
             Double dCount = Double.Parse(s);
 
 
-            /*if (dCount == 1)
+            if (dCount == 1)
             {
                 w / 1 = rm;
             }
@@ -71,7 +71,7 @@ namespace RM
             else
             {
                 w / 0.7 = rm;
-            }*/
+            }
         }
         
     }
