@@ -23,13 +23,12 @@ namespace RM
         private void Button_Clicked(object sender, EventArgs e)
         {
             Double w = Double.Parse(Weight.Text);           
-            //Double rm = Double.Parse(RM.Text);
+            Double rm = Double.Parse(RM.Text);
             String s = (String)count.SelectedItem;
-            DisplayAlert("RM", s, "ok");
-            //Double dCount = Double.Parse(s);
+            Double dCount = Double.Parse(s);
 
 
-            /*if (dCount == 1)
+            if (dCount == 1)
             {
                 w / 1 = rm;
             }
@@ -77,7 +76,7 @@ namespace RM
             else
             {
                 w / 0.7 = rm;
-            }*/
+            }
         }
     }
 }
