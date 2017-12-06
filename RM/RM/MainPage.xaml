@@ -56,7 +56,7 @@
                        FontSize="50"/>
                 
                 <Label x:Name="RM"
-                       Text=""
+                       Text="　　"
                        WidthRequest="50"/>
                 
             </StackLayout>

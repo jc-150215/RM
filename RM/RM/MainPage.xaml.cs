@@ -14,11 +14,18 @@ namespace RM
             InitializeComponent();
         }
 
+        private void count_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            String s = (String)count.SelectedItem;
+            
+        }
+
         private void Button_Clicked(object sender, EventArgs e)
         {
-            /*Double w = Double.Parse(Weight.Text);
-            Double rm = Double.Parse(RM.Text);
-            Double dCount = Double.Parse(s);*/
+            Double w = Double.Parse(Weight.Text);
+            //Double rm = Double.Parse(RM.Text);
+            DisplayAlert("RM", s, "ok");
+            Double dCount = Double.Parse(s);
 
 
             /*if (dCount == 1)
@@ -70,12 +77,6 @@ namespace RM
             {
                 w / 0.7 = rm;
             }*/
-        }
-
-        private void count_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            String s = (String)count.SelectedItem;
-            DisplayAlert("RM", s, "ok");
         }
     }
 }
