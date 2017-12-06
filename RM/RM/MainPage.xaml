@@ -55,7 +55,7 @@
                 <Label Text="重量"
                        FontSize="50"/>
                 
-                <Entry x:Name="RM"
+                <Label x:Name="RM"
                        Text="　　"
                        WidthRequest="50"/>
                 
