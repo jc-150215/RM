@@ -17,54 +17,56 @@ namespace RM
         {
             Double w = Double.Parse(Weight.Text);
             Double rm = Double.Parse(RM.Text);
+            c = Count.SelectedItem;
+            int c = int.Parse(c);
             
-            if(Count.SelectedItem.Equals(1))
+            if(c == 1)
             {
                 w / 1 = rm;
             }
             
-            else if(Count.SelectedItem.Equals(2))
+            else if(c == 2)
             {
                 w / 0.95 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(3))
+            else if (c == 3)
             {
                 w / 0.93 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(4))
+            else if (c == 4)
             {
                 w / 0.9 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(5))
+            else if (c == 5)
             {
                 w / 0.87 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(6))
+            else if (c == 6)
             {
                 w / 0.85 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(7))
+            else if (c == 7)
             {
                 w / 0.87 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(8))
+            else if (c == 8)
             {
                 w / 0.8 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(9))
+            else if (c == 9)
             {
                 w / 0.77 = rm;
             }
 
-            else if (Count.SelectedItem.Equals(10))
-            {
+            else
+             {
                 w / 0.70 = rm;
             }
         }
