@@ -16,9 +16,9 @@ namespace RM
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Double w = Double.Parse(Weight.Text);
+            /*Double w = Double.Parse(Weight.Text);
             Double rm = Double.Parse(RM.Text);
-            Double dCount = Double.Parse(s);
+            Double dCount = Double.Parse(s);*/
 
 
             /*if (dCount == 1)
