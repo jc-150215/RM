@@ -24,52 +24,52 @@ namespace RM
 
             if (dCount == 1)
             {
-                w / 1 = rm;
+                rm = w / 1;
             }
 
             else if (dCount == 2)
             {
-                w / 0.95 = rm;
+                rm = w / 0.95;
             }
 
             else if (dCount == 3)
             {
-                w / 0.93 = rm;
+               rm = w / 0.93;
             }
 
             else if (dCount == 4)
             {
-                w / 0.9 = rm;
+                rm = w / 0.9;
             }
 
             else if (dCount == 5)
             {
-                w / 0.87 = rm;
+                rm = w / 0.87;
             }
 
             else if (dCount == 6)
             {
-                w / 0.85 = rm;
+                rm = w / 0.85;
             }
 
             else if (dCount == 7)
             {
-                w / 0.87 = rm;
+               rm = w / 0.87;
             }
 
             else if (dCount == 8)
             {
-                w / 0.8 = rm;
+                rm = w / 0.8 ;
             }
 
             else if (dCount == 9)
             {
-                w / 0.77 = rm;
+                rm = w / 0.77;
             }
 
             else
             {
-                w / 0.7 = rm;
+                rm = w / 0.7;
             }
         }
     }
