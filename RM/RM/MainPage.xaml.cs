@@ -14,18 +14,12 @@ namespace RM
             InitializeComponent();
         }
 
-        /*private void count_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-            
-        }*/
-
         private void Button_Clicked(object sender, EventArgs e)
         {
             Double w = Double.Parse(Weight.Text);           
             Double rm = Double.Parse(RM.Text);
             String s = (String)count.SelectedItem;
-            Double dCount = Double.Parse(s);
+            int dCount = int.Parse(s);
 
 
             if (dCount == 1)
