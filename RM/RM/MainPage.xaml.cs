@@ -14,18 +14,19 @@ namespace RM
             InitializeComponent();
         }
 
-        private void count_SelectedIndexChanged(object sender, EventArgs e)
+        /*private void count_SelectedIndexChanged(object sender, EventArgs e)
         {
-            String s = (String)count.SelectedItem;
             
-        }
+            
+        }*/
 
         private void Button_Clicked(object sender, EventArgs e)
         {
             Double w = Double.Parse(Weight.Text);
             //Double rm = Double.Parse(RM.Text);
+            String s = (String)count.SelectedItem;
             DisplayAlert("RM", s, "ok");
-            Double dCount = Double.Parse(s);
+            //Double dCount = Double.Parse(s);
 
 
             /*if (dCount == 1)
