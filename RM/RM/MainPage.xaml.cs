@@ -16,35 +16,34 @@ namespace RM
        private void Button_Clicked(object sender, EventArgs e)
         {
             Double w = Double.Parse(Weight.Text);
-            Double c = Double.Parse(Count.SelectedItem);
             Double rm = Double.Parse(RM.Text);
             
-            if(c == 1)
+            if(Count.SelectedItem == 1)
             {
                 w / 1 = rm;
             }
             
-            else if(c == 2)
+            else if(Count.SelectedItem == 2)
             {
                 w / 0.95 = rm;
             }
 
-            else if (c == 3)
+            else if (Count.SelectedItem == 3)
             {
                 w / 0.93 = rm;
             }
 
-            else if (c == 4)
+            else if (Count.SelectedItem == 4)
             {
                 w / 0.9 = rm;
             }
 
-            else if (c == 5)
+            else if (Count.SelectedItem == 5)
             {
                 w / 0.87 = rm;
             }
 
-            else if (c == 6)
+            else if (Count.SelectedItem == 6)
             {
                 w / 0.85 = rm;
             }
@@ -54,17 +53,17 @@ namespace RM
                 w / 0.87 = rm;
             }
 
-            else if (c == 8)
+            else if (Count.SelectedItem == 8)
             {
                 w / 0.8 = rm;
             }
 
-            else if (c == 9)
+            else if (Count.SelectedItem == 9)
             {
                 w / 0.77 = rm;
             }
 
-            else if (c == 10)
+            else if (Count.SelectedItem == 10)
             {
                 w / 0.70 = rm;
             }
