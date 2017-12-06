@@ -18,7 +18,6 @@ namespace RM
         {
             Double w = Double.Parse(Weight.Text);
             Double rm = Double.Parse(RM.Text);
-            DisplayAlert("RM", s, "ok");
             Double dCount = Double.Parse(s);
 
 
@@ -76,6 +75,7 @@ namespace RM
         private void count_SelectedIndexChanged(object sender, EventArgs e)
         {
             String s = (String)count.SelectedItem;
+            DisplayAlert("RM", s, "ok");
         }
     }
 }
