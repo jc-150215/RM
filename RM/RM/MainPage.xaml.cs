@@ -19,7 +19,7 @@ namespace RM
             Double w = Double.Parse(Weight.Text);
             Double r = Double.Parse(RM.Text);
             String s = (String)count.SelectedItem;
-            int dCount = int.Parse(s);
+            Double dCount = Double.Parse(s);
 
 
             if (dCount == 1)
