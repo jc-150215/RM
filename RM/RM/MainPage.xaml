@@ -22,7 +22,7 @@
                        FontSize="50"
                        />
                 
-                <Picker x:Name="count" SelectedIndexChanged="count_SelectedIndexChanged" Title="数字を入力してください">
+                <Picker x:Name="count" Title="数字を入力してください">
                     <Picker.Items>
                         <x:String>1</x:String>
                         <x:String>2</x:String>

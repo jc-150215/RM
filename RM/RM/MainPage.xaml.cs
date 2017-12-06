@@ -22,7 +22,7 @@ namespace RM
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Double w = Double.Parse(Weight.Text);
+            Double w = Double.Parse(Weight.Text);           
             //Double rm = Double.Parse(RM.Text);
             String s = (String)count.SelectedItem;
             DisplayAlert("RM", s, "ok");
