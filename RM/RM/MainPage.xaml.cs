@@ -18,58 +18,57 @@ namespace RM
         {
             Double w = Double.Parse(Weight.Text);           
             String s = (String)count.SelectedItem;
-            Double rm = Double.Parse(RM.Text);
             int dCount = int.Parse(s);
 
 
             if (dCount == 1)
             {
-                rm = w / 1;
+                RM.Text = w / 1;
             }
 
             else if (dCount == 2)
             {
-                rm = w / 0.95;
+                RM.Text = w / 0.95;
             }
 
             else if (dCount == 3)
             {
-               rm = w / 0.93;
+                RM.Text = w / 0.93;
             }
 
             else if (dCount == 4)
             {
-                rm = w / 0.9;
+                RM.Text = w / 0.9;
             }
 
             else if (dCount == 5)
             {
-                rm = w / 0.87;
+                RM.Text = w / 0.87;
             }
 
             else if (dCount == 6)
             {
-                rm = w / 0.85;
+                RM.Text = w / 0.85;
             }
 
             else if (dCount == 7)
             {
-               rm = w / 0.87;
+                RM.Text = w / 0.87;
             }
 
             else if (dCount == 8)
             {
-                rm = w / 0.8 ;
+                RM.Text = w / 0.8 ;
             }
 
             else if (dCount == 9)
             {
-                rm = w / 0.77;
+                RM.Text = w / 0.77;
             }
 
-            else
+            else if(dCount == 10)
             {
-                rm = w / 0.7;
+                RM.Text = w / 0.7;
             }
         }
     }
