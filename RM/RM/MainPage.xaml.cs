@@ -22,12 +22,13 @@ namespace RM
             Double dCount = Double.Parse(s);
             if (s == null)
             {
-                RM.Text = "入力してください。";
+                DisplayAlert("", "入力してください。", "OK");
             }
 
             else if (w == null)
             {
-                Weight.Text = "入力してください。";
+                DisplayAlert("", "入力してください。", "OK");
+                //Weight.Text = "入力してください。";
             }
 
             else if (dCount == 1)
