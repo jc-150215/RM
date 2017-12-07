@@ -20,7 +20,7 @@ namespace RM
             Double k = 0.0;
             String s = (String)count.SelectedItem;
             Double dCount = Double.Parse(s);
-            if (s == null)
+            if (dCount == null)
             {
                 DisplayAlert("", "入力してください。", "OK");
             }
