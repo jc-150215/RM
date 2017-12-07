@@ -39,56 +39,56 @@ namespace RM
             else if (dCount == 3)
             {
                 k = w / 0.93;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
 
             else if (dCount == 4)
             {
                 k = w / 0.9;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
 
             else if (dCount == 5)
             {
                 k = w / 0.87;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
 
             else if (dCount == 6)
             {
                 k = w / 0.85;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
 
             else if (dCount == 7)
             {
                 k = w / 0.87;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
 
             else if (dCount == 8)
             {
                 k = w / 0.8;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
 
             else if (dCount == 9)
             {
                 k = w / 0.77;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
 
             else if(dCount == 10)
             {
                 k = w / 0.7;
-                Math.Round(k, 1);
+                k = Math.Round(k, 1);
                 RM.Text = k.ToString();
             }
         }
