@@ -5,7 +5,7 @@
              x:Class="RM.MainPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     Spacing="40">
+                     Spacing="50">
 
             <Label Text=""/>
 
@@ -47,7 +47,7 @@
                    FontSize="50"
                    FontAttributes="Bold"
                    BackgroundColor="Silver"
-                   VerticalOptions="Center"/>
+                   HorizontalOptions="Center"/>
             
             <StackLayout Orientation="Horizontal">
                 <Label Text="1RM"

@@ -16,22 +16,25 @@ namespace RM
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Double w = Double.Parse(Weight.Text);
-            Double k = 0.0;
-            String s = (String)count.SelectedItem;
-            Double dCount = Double.Parse(s);
-            if (dCount == null)
+            try
             {
-                DisplayAlert("", "入力してください。", "OK");
-            }
+                Double w = Double.Parse(Weight.Text);
+                Double k = 0.0;
+                String s = (String)count.SelectedItem;
+                Double dCount = Double.Parse(s);
+                if (dCount == null)
+                {
+                    DisplayAlert("", "入力してください。", "OK");
+                    //RM.Text = "入力してください。";
+                }
 
-            else if (w == null)
-            {
-                DisplayAlert("", "入力してください。", "OK");
-                //Weight.Text = "入力してください。";
-            }
+                else if (w == null)
+                {
+                    DisplayAlert("", "入力してください。", "OK");
+                    //Weight.Text = "入力してください。";
+                }
 
-            else if (dCount == 1)
+                else if (dCount == 1)
                 {
                     k = w / 1;
                     Math.Round(k, 1);
@@ -99,6 +102,12 @@ namespace RM
                     k = w / 0.7;
                     k = Math.Round(k, 1);
                     RM.Text = k.ToString();
+                }
+            }
+
+            catch (Exception e)
+            {
+                DisplayAlert("", "入力してください。", "OK");
             }
         }
     }
