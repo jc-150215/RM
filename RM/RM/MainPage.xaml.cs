@@ -20,76 +20,86 @@ namespace RM
             Double k = 0.0;
             String s = (String)count.SelectedItem;
             Double dCount = Double.Parse(s);
-
-
-            if (dCount == 1)
+            if (s == null)
             {
-                k = w / 1;
-                Math.Round(k, 1);
-                RM.Text = k.ToString();
+                this.textBox1.ForeColor = Color.Red;
+                RM.Text = "入力してください。";
             }
 
-            else if (dCount == 2)
+            else if (w == null)
             {
-                k = w / 0.95;
-                Math.Round(k, 1);
-                RM.Text = k.ToString();
+                this.textBox1.ForeColor = Color.Red;
+                Weight.Text = "入力してください。";
             }
 
-            else if (dCount == 3)
-            {
-                k = w / 0.93;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
-            }
+            else if (dCount == 1)
+                {
+                    k = w / 1;
+                    Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
 
-            else if (dCount == 4)
-            {
-                k = w / 0.9;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
-            }
+                else if (dCount == 2)
+                {
+                    k = w / 0.95;
+                    Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
 
-            else if (dCount == 5)
-            {
-                k = w / 0.87;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
-            }
+                else if (dCount == 3)
+                {
+                    k = w / 0.93;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
 
-            else if (dCount == 6)
-            {
-                k = w / 0.85;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
-            }
+                else if (dCount == 4)
+                {
+                    k = w / 0.9;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
 
-            else if (dCount == 7)
-            {
-                k = w / 0.87;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
-            }
+                else if (dCount == 5)
+                {
+                    k = w / 0.87;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
 
-            else if (dCount == 8)
-            {
-                k = w / 0.8;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
-            }
+                else if (dCount == 6)
+                {
+                    k = w / 0.85;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
 
-            else if (dCount == 9)
-            {
-                k = w / 0.77;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
-            }
+                else if (dCount == 7)
+                {
+                    k = w / 0.87;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
 
-            else if(dCount == 10)
-            {
-                k = w / 0.7;
-                k = Math.Round(k, 1);
-                RM.Text = k.ToString();
+                else if (dCount == 8)
+                {
+                    k = w / 0.8;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
+
+                else if (dCount == 9)
+                {
+                    k = w / 0.77;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
+                }
+
+                else if (dCount == 10)
+                {
+                    k = w / 0.7;
+                    k = Math.Round(k, 1);
+                    RM.Text = k.ToString();
             }
         }
     }
