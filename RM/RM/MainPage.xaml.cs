@@ -22,13 +22,11 @@ namespace RM
             Double dCount = Double.Parse(s);
             if (s == null)
             {
-                this.textBox1.ForeColor = Color.Red;
                 RM.Text = "入力してください。";
             }
 
             else if (w == null)
             {
-                this.textBox1.ForeColor = Color.Red;
                 Weight.Text = "入力してください。";
             }
 
