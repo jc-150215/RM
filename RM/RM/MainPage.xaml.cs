@@ -17,59 +17,69 @@ namespace RM
         private void Button_Clicked(object sender, EventArgs e)
         {
             Double w = Double.Parse(Weight.Text);
-            RM.Text = Double.Parse(RM.Text);
+            Double k = 0.0;
             String s = (String)count.SelectedItem;
             Double dCount = Double.Parse(s);
 
 
             if (dCount == 1)
             {
-                RM.Text = w / 1;
+                k = w / 1;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 2)
             {
-                RM.Text = w / 0.95;
+                k = w / 0.95;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 3)
             {
-                RM.Text = w / 0.93;
+                k = w / 0.93;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 4)
             {
-                RM.Text = w / 0.9;
+                k = w / 0.9;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 5)
             {
-                RM.Text = w / 0.87;
+                k = w / 0.87;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 6)
             {
-                RM.Text = w / 0.85;
+                k = w / 0.85;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 7)
             {
-                RM.Text = w / 0.87;
+                k = w / 0.87;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 8)
             {
-                RM.Text = w / 0.8 ;
+                k = w / 0.8;
+                RM.Text = k.ToString();
             }
 
             else if (dCount == 9)
             {
-                RM.Text = w / 0.77;
+                k = w / 0.77;
+                RM.Text = k.ToString();
             }
 
             else if(dCount == 10)
             {
-                RM.Text = w / 0.7;
+                k = w / 0.7;
+                RM.Text = k.ToString();
             }
         }
     }
