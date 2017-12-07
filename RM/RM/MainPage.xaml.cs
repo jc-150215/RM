@@ -17,58 +17,59 @@ namespace RM
         private void Button_Clicked(object sender, EventArgs e)
         {
             Double w = Double.Parse(Weight.Text);
+            RM.Text = Double.Parse(RM.Text);
             String s = (String)count.SelectedItem;
             Double dCount = Double.Parse(s);
 
 
             if (dCount == 1)
             {
-                Double.Parse(RM.Text) = w / 1;
+                RM.Text = w / 1;
             }
 
             else if (dCount == 2)
             {
-                Double.Parse(RM.Text) = w / 0.95;
+                RM.Text = w / 0.95;
             }
 
             else if (dCount == 3)
             {
-                Double.Parse(RM.Text) = w / 0.93;
+                RM.Text = w / 0.93;
             }
 
             else if (dCount == 4)
             {
-                Double.Parse(RM.Text) = w / 0.9;
+                RM.Text = w / 0.9;
             }
 
             else if (dCount == 5)
             {
-                Double.Parse(RM.Text) = w / 0.87;
+                RM.Text = w / 0.87;
             }
 
             else if (dCount == 6)
             {
-                Double.Parse(RM.Text) = w / 0.85;
+                RM.Text = w / 0.85;
             }
 
             else if (dCount == 7)
             {
-                Double.Parse(RM.Text) = w / 0.87;
+                RM.Text = w / 0.87;
             }
 
             else if (dCount == 8)
             {
-                Double.Parse(RM.Text) = w / 0.8 ;
+                RM.Text = w / 0.8 ;
             }
 
             else if (dCount == 9)
             {
-                Double.Parse(RM.Text) = w / 0.77;
+                RM.Text = w / 0.77;
             }
 
             else if(dCount == 10)
             {
-                Double.Parse(RM.Text) = w / 0.7;
+                RM.Text = w / 0.7;
             }
         }
     }
